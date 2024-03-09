@@ -58,6 +58,7 @@ int main()
 
 int registro()
 {
+	
 	char arquivo [40];
 	char cpf[40];
 	char nome [40];
@@ -106,12 +107,44 @@ int registro()
 	file = fopen(arquivo, "a");
 	fprintf(file,cargo);
 	fclose(file);
+
 	
-	system("pause");
+	int opcao=0;//definindo variaveis
+	int laco=1;
+	
+	for(laco=1;laco=1;)
+	{
+		system("cls");
+		printf("\n\nDeseja realizar outro registro?.\n\n");
+		printf("\t1 - Sim\n");
+		printf("\t2 - Não\n");	
+		
+		scanf("%d",&opcao);
+	
+		system("cls");
+	
+		switch(opcao)
+		{
+			
+			case 1:
+			registro();
+			break;
+		
+			case 2:
+			printf("\n Obrigado por ultilizar nosso programa!.\n");
+			return 0;
+		
+			
+			
+		}	
+	}
 }
+
+	
 int consultar()
 	
-{	setlocale(LC_ALL, "Portuguese");
+{	
+	setlocale(LC_ALL, "Portuguese");
 
 	char cpf[40];
 	char conteudo[200];
@@ -131,7 +164,41 @@ int consultar()
 		printf("\nEssas são as informações do usuario:");
 		printf("%s",conteudo);
 		printf("\n\n");
+	
+	system("pause");
+	
 	}
+
+	int opcao=0;//definindo variaveis
+	int laco=1;
+	
+	for(laco=1;laco=1;)
+	{
+		system("cls");
+		printf("\n\nDeseja realizar nova consulta?.\n\n");
+		printf("\t1 - Sim\n");
+		printf("\t2 - Não\n");	
+		
+		scanf("%d",&opcao);
+	
+		system("cls");
+	
+		switch(opcao)
+		{
+			
+			case 1:
+			consultar();
+			break;
+		
+			case 2:
+			printf("\n Obrigado por ultilizar nosso programa!.\n");
+			return 0;
+		
+			
+		}	
+	}
+	
+	
 	
 	system("pause");
 }
@@ -158,6 +225,41 @@ int deletar()
 		printf("\nUsuário deletado com sucesso!.\n");
 		system("pause");
 	}
+	
+	
+	
+	
+	int opcao=0;//definindo variaveis
+	int laco=1;
+	
+	for(laco=1;laco=1;)
+	{
+		system("cls");
+		printf("\n\nDeseja deletar outro usario?.\n\n");
+		printf("\t1 - Sim\n");
+		printf("\t2 - Não\n");	
+		
+		scanf("%d",&opcao);
+	
+		system("cls");
+	
+		switch(opcao)
+		{
+			
+			case 1:
+			deletar();
+			break;
+		
+			case 2:
+			printf("\n Obrigado por ultilizar nosso programa!.\n");
+			return 0;
+		
+			
+		}	
+	}
+	
+	
+	
 	
 }	
 
