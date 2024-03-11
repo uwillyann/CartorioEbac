@@ -17,7 +17,7 @@ int main()
  			
  		setlocale(LC_ALL, "Portuguese"); //definindo a linguagem
  	
-	 	printf("\t Cart√≥rio da EBAC\t\n\n"); //inicio do menu
+	 	printf("\t CartÛrio da EBAC\t\n\n"); //inicio do menu
  		printf("Escolha a opcao desejada do menu:\n\n");
  		printf("\t1 - Registrar nomes\n");
  		printf("\t2 - Consultar nomes\n");
@@ -117,7 +117,7 @@ int registro()
 		system("cls");
 		printf("\n\nDeseja realizar outro registro?.\n\n");
 		printf("\t1 - Sim\n");
-		printf("\t2 - N√£o\n");	
+		printf("\t2 - N„o\n");	
 		
 		scanf("%d",&opcao);
 	
@@ -157,11 +157,11 @@ int consultar()
 
 	if(file == NULL)
 	{
-		printf("N√£o foi possivel abrir o arquivo, n√£o localizado.\n");
+		printf("N„o foi possivel abrir o arquivo, n„o localizado.\n");
 	}
 	while(fgets(conteudo, 200, file) != NULL)
 	{
-		printf("\nEssas s√£o as informa√ß√µes do usuario:");
+		printf("\nEssas s„o as informaÁıes do usuario:");
 		printf("%s",conteudo);
 		printf("\n\n");
 	
@@ -177,7 +177,7 @@ int consultar()
 		system("cls");
 		printf("\n\nDeseja realizar nova consulta?.\n\n");
 		printf("\t1 - Sim\n");
-		printf("\t2 - N√£o\n");	
+		printf("\t2 - N„o\n");	
 		
 		scanf("%d",&opcao);
 	
@@ -217,12 +217,12 @@ int deletar()
 	
 	if(file == NULL)
 	{
-		printf("\nO us√°rio n√£o se encontra no sistema!.\n");
+		printf("\nO us·rio n„o se encontra no sistema!.\n");
 	}
 	else
 	{
 		remove(cpf);
-		printf("\nUsu√°rio deletado com sucesso!.\n");
+		printf("\nUsu·rio deletado com sucesso!.\n");
 		system("pause");
 	}
 	
@@ -237,7 +237,7 @@ int deletar()
 		system("cls");
 		printf("\n\nDeseja deletar outro usario?.\n\n");
 		printf("\t1 - Sim\n");
-		printf("\t2 - N√£o\n");	
+		printf("\t2 - N„o\n");	
 		
 		scanf("%d",&opcao);
 	
